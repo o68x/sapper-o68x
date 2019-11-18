@@ -1,22 +1,38 @@
 <script>
-	import Nav from '../components/Nav.svelte';
+  import Headroom from "svelte-headroom";
 
-	export let segment;
+  import Banner from "../components/banner.svelte";
+  import Nav from "../components/Nav.svelte";
+  export let segment;
 </script>
 
-<style lang="scss">
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
+<style lang="scss" global>
+  @import "../styles/theme.scss";
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  main {
+    // position: relative;
+    max-width: 56em;
+    background-color: white;
+    padding: 2em;
+    margin: 0 auto;
 		box-sizing: border-box;
-	}
+
+		section {
+			min-height: 60vh;
+			padding-top: 150px; // corrects for floating header
+  	}
+  }
 </style>
 
-<Nav {segment}/>
-
+<Headroom offset={100} tolerance={10}>
+  <Banner />
+  <header>
+    <Nav {segment} />
+  </header>
+</Headroom>
 <main>
-	<slot></slot>
+  <slot />
 </main>

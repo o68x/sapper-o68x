@@ -1,61 +1,42 @@
 <script>
-	export let segment;
+  export let segment;
 </script>
 
 <style lang="scss">
-	$border-col: white;
-	nav {
-		border-bottom: 1px solid $border-col;
-		font-weight: 300;
-		padding: 0 1em;
-	}
+  @import "../styles/theme.scss";
+  .navbar {
+    border-bottom: 1px solid $gray-color-light;
+    font-weight: 300;
+    padding: 0 1em;
+    justify-content: center;
+    background-image: linear-gradient(white, rgba(255, 255, 255, 0.5));
+  }
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
+  .selected {
+    position: relative;
+    display: inline-block;
+  }
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+  .selected::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 1em);
+    height: 2px;
+    background-color: $secondary-color;
+    display: block;
+    bottom: -1px;
+  }
 
-	li {
-		display: block;
-		float: left;
-	}
-
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
+  a {
+    text-decoration: none;
+    padding: 1em 0.5em;
+    display: block;
+  }
 </style>
 
-<nav>
-	<ul>
-		<li><a class:selected='{segment === undefined}' href='.'>hom</a></li>
-		<li><a class:selected='{segment === "about"}' href='about'>about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class:selected='{segment === "blog"}' href='blog'>blog</a></li>
-	</ul>
+<nav class="navbar">
+  <a class:selected={segment === undefined} href=".">accueil</a>
+  <!-- TODO: Casse-couilles -->
+  <a class:selected={segment === 'about'} href="about">à propos</a>
+  <a rel="prefetch" class:selected={segment === 'blog'} href="blog">blog</a>
 </nav>

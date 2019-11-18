@@ -1,5 +1,5 @@
 {
-  "name": "TODO",
+  "name": "todo",
   "description": "TODO",
   "version": "0.0.1",
   "scripts": {
@@ -35,6 +35,7 @@
     "rollup-plugin-terser": "^4.0.4",
     "sapper": "^0.27.0",
     "svelte": "^3.0.0",
+    "svelte-headroom": "^2.2.1",
     "svelte-preprocess": "^3.2.6"
   }
 }
