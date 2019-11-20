@@ -1,5 +1,4 @@
 <style>
-	@import '../styles/theme.scss';
 
 figure {
     text-align: center;

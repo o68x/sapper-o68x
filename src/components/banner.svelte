@@ -14,6 +14,7 @@
       text-align: center;
       &.letter {
         font-size: 12pt;
+        font-weight: 100;
         @media screen and (min-width: 600px) {
           font-size: 3.1875vw;
         }
@@ -57,14 +58,14 @@
   <span class="letter">u</span>
   <span class="letter highlight">x</span>
 
-  <span class="number highlight">O</span>
+  <span class="number">O</span>
   <span class="number highlight">6</span>
   <span class="number">5</span>
   <span class="number">4</span>
   <span class="number">3</span>
   <span class="number">2</span>
   <span class="number ">1</span>
-  <span class="number" >.</span>
+  <span class="number" >·</span>
   <span class="number">1</span>
   <span class="number">2</span>
   <span class="number">3</span>
@@ -73,5 +74,5 @@
   <span class="number">6</span>
   <span class="number">7</span>
   <span class="number highlight">8</span>
-  <span class="number highlight">x</span>
+  <span class="number">x</span>
 </div>

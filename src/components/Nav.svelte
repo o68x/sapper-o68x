@@ -9,7 +9,7 @@
     font-weight: 300;
     padding: 0 1em;
     justify-content: center;
-    background-image: linear-gradient(white, rgba(255, 255, 255, 0.5));
+    background-image: linear-gradient(white, white, rgba(255, 255, 255, 0.5));
   }
 
   .selected {
@@ -37,6 +37,6 @@
 <nav class="navbar">
   <a class:selected={segment === undefined} href=".">accueil</a>
   <!-- TODO: Casse-couilles -->
-  <a class:selected={segment === 'about'} href="about">à propos</a>
   <a rel="prefetch" class:selected={segment === 'blog'} href="blog">blog</a>
+  <a class:selected={segment === 'contact'} href="contact">contact</a>
 </nav>
