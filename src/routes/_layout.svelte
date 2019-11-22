@@ -27,7 +27,7 @@
   }
 </style>
 
-<Headroom offset={100} tolerance={10}>
+<Headroom tolerance={10}>
   <Banner />
   <header>
     <Nav {segment} />

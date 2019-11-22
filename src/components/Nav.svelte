@@ -3,13 +3,23 @@
 </script>
 
 <style lang="scss">
-  @import "../styles/theme.scss";
+  // @import "../styles/theme.scss";
   .navbar {
-    border-bottom: 1px solid $gray-color-light;
+    border-bottom: 1px solid lightgray;
     font-weight: 300;
     padding: 0 1em;
     justify-content: center;
     background-image: linear-gradient(white, white, rgba(255, 255, 255, 0.5));
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+      padding: 1em 0.5em;
+      display: inline-block;
+      &:focus,
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   .selected {
@@ -22,15 +32,9 @@
     content: "";
     width: calc(100% - 1em);
     height: 2px;
-    background-color: $secondary-color;
+    background-color: var(--secondary-color);
     display: block;
     bottom: -1px;
-  }
-
-  a {
-    text-decoration: none;
-    padding: 1em 0.5em;
-    display: block;
   }
 </style>
 

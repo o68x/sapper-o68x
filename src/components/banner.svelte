@@ -3,7 +3,7 @@
 </script>
 
 <style lang="scss">
-  @import "../styles/theme.scss";
+  // @import "../styles/theme.scss";
 
   .grid-68 {
     display: grid;
@@ -18,7 +18,7 @@
         @media screen and (min-width: 600px) {
           font-size: 3.1875vw;
         }
-        color: $primary-color;
+        color: var(--primary-color);
         opacity: 0.5;
       }
       &.number {
@@ -26,12 +26,12 @@
         @media screen and (min-width: 600px) {
           font-size: 1.59375vw;
         }
-        color: $primary-color;
+        color: var(--primary-color);
         opacity: 0.3;
         margin-top: -0.8em;
       }
       &.highlight {
-        color: $primary-color;
+        color: var(--secondary-color);
         opacity: 1;
         font-weight: bold;
       }

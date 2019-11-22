@@ -1,6 +1,5 @@
 <style>
-
-figure {
+  figure {
     text-align: center;
     margin: 0 0 1em 0;
   }
@@ -10,11 +9,10 @@ figure {
     max-width: 400px;
     margin: 0 0 1em 0;
   }
-
 </style>
 
 <svelte:head>
-  <title>Sapper project template</title>
+  <title>Sapper o68x</title>
 </svelte:head>
 
 <section id="projects">
@@ -25,12 +23,6 @@ figure {
     <figcaption>HIGH FIVE!</figcaption>
   </figure>
 
-  <blockquote>
-    <p>
-      Try editing this file (src/routes/index.svelte) to test live reloading.
-    </p>
-    <cite>Me.</cite>
-  </blockquote>
 </section>
 <section id="cv">
   <h1>Normal success!</h1>

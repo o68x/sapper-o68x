@@ -1,8 +1,12 @@
-$secondary-color: orange;
-$base-font-family: "Work Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
 
+:root {
+  $base-font-family: "Work Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
+  --primary-color: rgb(29, 65, 99);
+  --secondary-color: #3a6683;
+}
 h1 {
-  font-weight: 900 !important;
+  font-weight: 100 !important;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');@import "node_modules/spectre.css/src/spectre";
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+//@import "node_modules/spectre.css/src/spectre";
