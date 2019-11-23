@@ -1,11 +1,24 @@
 
 :root {
-  $base-font-family: "Work Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto !default;
   --primary-color: rgb(29, 65, 99);
   --secondary-color: #3a6683;
 }
+
+body {
+	margin: 0;
+	font-family:  "Work Sans", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #333;
+}
+
 h1 {
-  font-weight: 100 !important;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+a {
+	color: inherit;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');

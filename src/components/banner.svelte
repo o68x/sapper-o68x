@@ -3,7 +3,7 @@
 </script>
 
 <style lang="scss">
-  // @import "../styles/theme.scss";
+  /* @import "../styles/theme.scss"; */
 
   .grid-68 {
     display: grid;

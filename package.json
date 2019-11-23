@@ -36,6 +36,7 @@
     "sapper": "^0.27.0",
     "svelte": "^3.0.0",
     "svelte-headroom": "^2.2.1",
-    "svelte-preprocess": "^3.2.6"
+    "svelte-preprocess": "^3.2.6",
+    "svelte-preprocess-markdown": "^2.5.4"
   }
 }
