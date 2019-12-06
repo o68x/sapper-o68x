@@ -1,3 +1,5 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/o68x/sapper-o68x)
+
 # sapper-template
 
 The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
