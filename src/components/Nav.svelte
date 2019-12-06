@@ -5,7 +5,7 @@
 <style lang="scss">
   // @import "../styles/theme.scss";
   .navbar {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid white;
     font-weight: 300;
     padding: 0 1em;
     justify-content: center;
