@@ -18,5 +18,5 @@
 </section>
 
 <section>
-  <h1>Little success!</h1>
+  <h1>No success!</h1>
 </section>

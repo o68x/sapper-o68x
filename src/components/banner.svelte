@@ -65,7 +65,7 @@
   <span class="number">3</span>
   <span class="number">2</span>
   <span class="number ">1</span>
-  <span class="number" >·</span>
+  <span class="number">·</span>
   <span class="number">1</span>
   <span class="number">2</span>
   <span class="number">3</span>

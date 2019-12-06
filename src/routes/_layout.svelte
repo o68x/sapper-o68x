@@ -2,7 +2,7 @@
   import Headroom from "svelte-headroom";
 
   import Banner from "../components/banner.svelte";
-  import Nav from "../components/Nav.svelte";
+  import Nav from "../components/nav.svelte";
   export let segment;
 </script>
 
@@ -15,7 +15,6 @@
   main {
     // position: relative;
     max-width: 56em;
-    background-color: white;
     padding: 2em;
     margin: 0 auto;
 		box-sizing: border-box;
